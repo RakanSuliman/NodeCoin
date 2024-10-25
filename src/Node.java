@@ -1,5 +1,5 @@
 public class Node {
-  public String Date; // issue: Conflict with java.util.Date
+  public String Date;
     Node nextHash;
     Node prevHash;
     MaxHeap root;
@@ -28,7 +28,7 @@ public void setDate(String Date) {
 
 //NOTE:
 // String toString(Date)?
-@Override
+    @Override
     public String toString() {
         return this.Date;
 }
