@@ -107,8 +107,6 @@ and moves the value up until the max-heap property is restored.
         }
 
     }
-
-
     class nodeCoin  {
         Node head;
         Node tail;
