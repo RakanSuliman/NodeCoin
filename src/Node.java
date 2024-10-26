@@ -8,16 +8,16 @@ public class Node {
         this.Date = "";
         this.nextHash = null;
         this.prevHash = null;
-        this.root = null;
         this.root = new MaxHeap();
     }
 
-    Node(String Date) {
+    Node(String Date, int capacity) {
         this.Date = Date;
         this.nextHash = null;
         this.prevHash = null;
-        this.root = new MaxHeap();
+        this.root = new MaxHeap(capacity);
     }
+
 
     public String getDate() {
         return this.Date;
@@ -26,8 +26,7 @@ public void setDate(String Date) {
         this.Date = Date;
 }
 
-//NOTE:
-// String toString(Date)?
+
     @Override
     public String toString() {
         return this.Date;

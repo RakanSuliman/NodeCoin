@@ -9,7 +9,7 @@ public class MaxHeap {
         this.currentSize = 0;
     }
     MaxHeap(int capacity) {
-       if(capacity <= 0)
+       if(capacity <= 0 || capacity > 100000)
            throw new IllegalArgumentException();
 
         transaction = new Transaction[capacity + 1];
@@ -43,7 +43,7 @@ and moves the value up until the max-heap property is restored.
             if (j < currentSize && transaction[j].compareTo(transaction[j+1]) < 0){
                 j++;
             }
-            if (transaction[k].compareTo(transaction[j]) <= 0){
+            if (transaction[k].compareTo(transaction[j]) >= 0){
                 break;
             }
             swap(k, j);
@@ -62,7 +62,9 @@ and moves the value up until the max-heap property is restored.
             throw new IllegalStateException("Heap is empty");
         }
     Transaction temp = transaction[1]; // Saving the max root
-    transaction[1] = transaction[currentSize--]; // Replace the last with the max and reduce the heap by 1
+    transaction[1] = transaction[currentSize]; // Replace the last with the max and reduce the heap by 1
+     transaction[currentSize] = null;
+     currentSize--;
     Sink(1); // Sink the new root
     return temp;
     }
