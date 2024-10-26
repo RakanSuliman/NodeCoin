@@ -28,7 +28,7 @@ public class nodeCoin  {
         }
         size++;
     }
-    // TODO: Date(Parameter)
+
     Node getMax(String Date){
         if (isEmpty()){
             throw new IllegalStateException();
@@ -59,7 +59,7 @@ public class nodeCoin  {
     }
     return null;
     }
-    // TODO: Date(Parameter)
+
     String getAll(String Date){
         Node current = head;
         String temp = "";

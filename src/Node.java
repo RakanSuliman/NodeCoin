@@ -18,7 +18,6 @@ public class Node {
         this.root = new MaxHeap(capacity);
     }
 
-
     public String getDate() {
         return this.Date;
 }

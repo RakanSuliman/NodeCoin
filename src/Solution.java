@@ -138,7 +138,7 @@ and moves the value up until the max-heap property is restored.
             }
             size++;
         }
-        // TODO: Date(Parameter)
+
         Node getMax(String Date){
             if (isEmpty()){
                 return null;
@@ -169,7 +169,7 @@ and moves the value up until the max-heap property is restored.
             }
             return null;
         }
-        // TODO: Date(Parameter)
+
         String getAll(String Date){
             Node current = head;
             String temp = "";
