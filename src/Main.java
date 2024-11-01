@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class Main {
-
     public static void main(String[] args) {
         nodeCoin nodecoin = new nodeCoin();
         Scanner scanner = new Scanner(System.in);
@@ -14,7 +13,6 @@ public class Main {
                 System.out.println("-1");
                 continue;
             }
-
             // Get user operation type and date
             int userOption = Integer.parseInt(splash[0]);
             String date = Node.datingDate(splash[1]);
