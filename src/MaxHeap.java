@@ -3,6 +3,7 @@ public class MaxHeap {
     int capacity;
     int currentSize;
 
+
     MaxHeap() {
         this.capacity = 10;
         this.transaction = new Transaction[capacity];
