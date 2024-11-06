@@ -52,11 +52,11 @@ nodeCoin is a cryptocurrency project designed specifically for CS210 students to
 | Remove Maximum Transaction| O(log m)       | O(n + log m)      |
 | Get All Transactions      | O(n + m * log m)| O(n + m * log m)  |
 
-## Comparison with Other Data Structures
+## Comparison with Doubly Linked List or Max Heap Implementation
 
 - **Doubly Linked List (DLL)**: A DLL alone would not efficiently manage transactions as it would require additional sorting. nodeCoin's integrated max heap allows for efficient sorting and retrieval.
-- **Max Heap Alone**: A max heap alone cannot categorize transactions by date. nodeCoin combines linked lists for date management with max heaps for transactions, providing a more efficient solution.
-
+- **Max Heap Alone**: A max heap alone cannot categorize transactions by date. nodeCoin combines doubly linked lists for date management with max heaps for transactions, providing a more efficient solution.
+  
 ## How to Run
 
 1. Clone the repository.
@@ -73,5 +73,3 @@ nodeCoin is a cryptocurrency project designed specifically for CS210 students to
 ## Acknowledgments
 
 - Thanks to Dr.Basit Qureshi CS210 course instructor for guiding and teaching us data structures. 
-
-
