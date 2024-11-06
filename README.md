@@ -1,6 +1,6 @@
 # nodeCoin
 
-nodeCoin is a cryptocurrency project designed specifically for CS210 students to implement and understand data structures and algorithms. It demonstrates how data structures such as doubly linked lists, heaps, and nodes can be used to create a simplified cryptocurrency system.
+nodeCoin is a cryptocurrency project for CS210 students to implement data structures and algorithms. It demonstrates how doubly linked lists, heaps, and nodes can be used to create a simplified cryptocurrency system.
 
 ## Features
 
@@ -15,7 +15,7 @@ nodeCoin is a cryptocurrency project designed specifically for CS210 students to
 - **Node**: Represents each unique date, which contains a `MaxHeap` of transactions for that day.
 - **nodeCoin**: Manages all nodes using a doubly linked list.
 - **Transaction**: Represents a transaction with an amount and transaction number.
-- **Main**: The main class that ties everything together and handles user interaction.
+- **Solution**: The main class that ties everything together and handles user interaction.
 
 ## Usage
 
@@ -47,10 +47,10 @@ nodeCoin is a cryptocurrency project designed specifically for CS210 students to
 
 | Operation                  | Best Case      | Worst Case        |
 |---------------------------|----------------|-------------------|
-| Insert Transaction        | O(log m)       | O(n + log m)      |
+| Insert Transaction        | O(n + log m)   | O(n + log m)      |
 | Get Maximum Transaction   | O(n)           | O(n)              |
-| Remove Maximum Transaction| O(log m)       | O(n + log m)      |
-| Get All Transactions      | O(n + m * log m)| O(n + m * log m)  |
+| Remove Maximum Transaction| O(n + log m)   | O(n + log m)      |
+| Get All Transactions      | O(n + m log m) | O(n + m log m)    |
 
 ## Comparison with Other Data Structures
 
@@ -63,7 +63,7 @@ nodeCoin is a cryptocurrency project designed specifically for CS210 students to
    ```
    git clone https://github.com/RakanSuliman/NodeCoin.git
    ```
-2. Compile and run the Main class using Java.
+2. Compile and run the Solution class using Java.
    ```
    javac Main.java
    java Main
@@ -73,5 +73,3 @@ nodeCoin is a cryptocurrency project designed specifically for CS210 students to
 ## Acknowledgments
 
 - Thanks to Dr.Basit Qureshi CS210 course instructor for guiding and teaching us data structures. 
-
-
